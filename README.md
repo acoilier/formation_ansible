@@ -22,8 +22,11 @@ Téléchargement des fichiers:
 Il faut se placer dans le répertoire **formation_ansible** afin d'éxécuter les commande suivantes.  
 
 Création du lab avec deux serveurs:
->docker-compose up -d --scale srv-lab=2
+>docker-compose up -d
 
 Supprimer les serveurs du lab:
->docker-compose down -d
+>docker-compose down
+
+Vérifier que nos conteneurs sont up:
+>docker ps
 
