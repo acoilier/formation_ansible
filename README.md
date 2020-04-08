@@ -30,7 +30,7 @@ Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra don
 Installation Ansible:
 >apk add ansible
 
-## récupération du dépot sur Github:
+## Récupération du dépot sur Github:
 
 Clone le dépot de la formation dans ton home directory avec la commande ci-dessous:
 >git clone https://github.com/acoilier/formation_ansible.git
