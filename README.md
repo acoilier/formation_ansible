@@ -25,15 +25,16 @@ Bon la on est pas mal, tu as accès à ton serveur et tu peux en ajouter d'autre
 
 Maintenant si tu est comme moi tu tape **ll** pour lister le contenu d'un répertoire, AAHHH y'a pas les Alias. Tu tape **nano** pour modifier un fichier ou **apt/yum** pour installer un package, rien ne fonctionne t'es deg !!! Tu te dis: "Ca commance je vais galérer", **ne t'inquiete pas ca va bien se passer** on va justement s'occuper de ca mais avec Ansible tant qu'a faire, histoire de ne pas avoir a se retaper le bouleau a chaque connexion à PWD.
 
-***Bon à savoir :***
-Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra donc installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
+>***Bon à savoir :*** Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra donc installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
 
 Installation Ansible:
->apk add ansible
-
+```
+$ apk add ansible
+```
 ## Récupération du dépot sur Github:
 
 Clone le dépot de la formation dans ton home directory avec la commande ci-dessous:
->git clone https://github.com/acoilier/formation_ansible.git
-
+```
+$ git clone https://github.com/acoilier/formation_ansible.git
+```
 C'est bon t'es prêt pour commancer les labs, let's go !!!
