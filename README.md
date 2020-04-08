@@ -2,38 +2,38 @@
 
 Cette formation présente l'outil Ansible et aborde les compétences de base pour commancer à l'utiliser. 
 
-Lors de cette formation des Labs permettrons de manipuler Ansible et d'agir sur des serveurs cibles, ces serveurs seront des conteneurs docker éxécutés localement. il est nécessaire d'avoir les connaissances de base d'utilisation d'un système Linux.
+Lors de cette formation des Labs permettrons de manipuler Ansible et manager plusieur servers, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de base d'utilisation d'un système Linux pour suivre cette formation.
 
-### Lien du cours:
+## Lien du cours:
 - [Présentation du cours]()
-- [Vidéo de la présentation]()
-## Prérequis pour faire les Labs:
+- [Projer github](https://github.com/acoilier/formation_ansible)
+- [Play Whis Docker](https://labs.play-with-docker.com/)
 
-### Cas utilisation de Play Whis Docker :
-Il est possible de réaliser ces Labs directement sur le site [Play Whis Docker](https://labs.play-with-docker.com/).  
-Dans ce cas les le serveur utilisé sera un Alpine Linux. Il faudra installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
+## Utilisation de Play Whis Docker :
+### Connexion à PWD :
+La plateforme PWD est un projet soutenu par Docker afin de faire des Labs Docker gratuitement. Dans notre cas nous n'utiliserons pas docker mais seulement les instances de serveurs qu'il est pôssible de générer. Afin de pouvoir l'utiliser il faut tu est un compte docker, tu va t'en créer un en suivant le modop ci-dessous.
+- 1 Se connecter sur le site [Play Whis Docker](https://labs.play-with-docker.com/).  
+- 2 Cliquer sur **Login** puis **docker**  
+- 3 Si vous avez un compte Docker vous pouvez l'utiliser sinon il faudra en créer un en cliquant sur **sign up**.  
+### Utilisation de PWD:
+Quand tu es connecté, tu as accès pour 4H au Labs avant sa destruction. Il sera possible de le relancer autant de foi que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
+
+Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité de connecter dessus directement en SSH avec le lui qui t'es donné dans le récap. Si t'es sur Windows t'as **putty.exe** ou le nouveau terminal Microsoft qui éxécute une instance **WSL** ;)
+
+Bon la on est pas mal, tu as accès à ton serveur et tu peux en ajouter d'autre cliquant sur **ADD NEW INSTANCE**.  
+
+La si tu est comme moi tu tape **ll** pour lister le contenu d'un répertoire, AAHHH y'a pas les Alias. Tu tape nano pour modifier un fichier ou **apt/yum** pour installer un package, rien ne fonctionne t'es deg !!! Tu te dis: "Ca commance je vais galérer", **ne t'inquiete pas ca va bien se passer** on va justement s'occuper de ca mais avec Ansible tant qu'a faire, histoire de ne pas avoir a se retaper le bouleau a chaque connexion à PWD.
+
+***Bon à savoir :***
+Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra donc installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
 
 Installation Ansible:
 >apk add ansible
 
-### En cas d'utilisation d'une machine Linux :
-Installation des packets nécessaire sur le système (ici Débian):
->sudo apt-get update  
->sudo apt-get install git docker docker-compose ansible
+## récupération du dépot sur Github:
 
-Téléchargement des fichiers:
-
+Clone le dépot de la formation dans ton home directory avec la commande ci-dessous:
 >git clone https://github.com/acoilier/formation_ansible.git
 
-## Commandes utiles pour les Labs
-Il faut se placer dans le répertoire **formation_ansible** afin d'éxécuter les commande suivantes.  
 
-Création du lab avec deux serveurs:
->docker-compose up -d
-
-Supprimer les serveurs du lab:
->docker-compose down
-
-Vérifier que nos conteneurs sont up:
->docker ps
 
