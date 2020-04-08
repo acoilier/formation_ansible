@@ -2,11 +2,11 @@
 
 Cette formation présente l'outil Ansible et aborde les compétences de base pour commancer à l'utiliser. 
 
-Lors de cette formation des Labs permettrons de manipuler Ansible et manager plusieur servers, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de base d'utilisation d'un système Linux pour suivre cette formation.
+Lors de cette formation des Labs permettrons de manipuler Ansible et manager plusieur servers, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de bases d'utilisation d'un système Linux pour suivre cette formation.
 
 ## Lien du cours:
 - [Présentation du cours]()
-- [Projer github](https://github.com/acoilier/formation_ansible)
+- [Projet github](https://github.com/acoilier/formation_ansible)
 - [Play Whis Docker](https://labs.play-with-docker.com/)
 
 ## Utilisation de Play Whis Docker :
@@ -16,7 +16,7 @@ La plateforme PWD est un projet soutenu par Docker afin de faire des Labs Docker
 - 2 Cliquer sur **Login** puis **docker**  
 - 3 Si vous avez un compte Docker vous pouvez l'utiliser sinon il faudra en créer un en cliquant sur **sign up**.  
 ### Utilisation de PWD:
-Quand tu es connecté, tu as accès pour 4H au Labs avant sa destruction. Il sera possible de le relancer autant de foi que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
+Quand tu es connecté, tu as accès pour 4H au Labs avant sa destruction. Il sera possible de le relancer autant de fois que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
 
 Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité de connecter dessus directement en SSH avec le lui qui t'es donné dans le récap. Si t'es sur Windows t'as **putty.exe** ou le nouveau terminal Microsoft qui éxécute une instance **WSL** ;)
 
