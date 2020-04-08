@@ -18,11 +18,12 @@ La plateforme PWD est un projet soutenu par Docker afin de faire des Labs Docker
 ### Utilisation de PWD:
 Quand tu es connecté, tu as accès pour 4H au Labs avant sa destruction. Il sera possible de le relancer autant de fois que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
 
-Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité le taper tes commande directement dans l'interface web, cependant je te conseil de te connecter dessus directement en SSH avec le l'adresse qui t'es donné dans le récap du haut de la page (pour pouvoir faire des tabulation). Si t'es sur Windows t'as **putty.exe** ou le [nouveau terminal Microsoft](https://www.microsoft.com/fr-fr/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab) qui éxécute une instance [Windows Subsystem Linux](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10), pour WSL je te prévient c'est un peu long à installer (du powershell et un reboot) garde le pour plus tard si c'est pas déja opérationnel pour toi ;)
+Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité de taper tes commandes directement dans l'interface web, cependant je te conseil de te connecter dessus directement en SSH avec le l'adresse qui t'es donné dans le récap du haut de la page (pour pouvoir faire des tabulation).  
+Si t'es sur Windows t'as **putty.exe** ou le [nouveau terminal Microsoft](https://www.microsoft.com/fr-fr/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab) qui éxécute une instance [Windows Subsystem Linux](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10), pour WSL je te prévient c'est un peu long à installer (du powershell et un reboot) garde le pour plus tard si c'est pas déja opérationnel pour toi ;)
 
 Bon la on est pas mal, tu as accès à ton serveur et tu peux en ajouter d'autres cliquant sur **ADD NEW INSTANCE**.  
 
-Maintenant si tu est comme moi tu tape **ll** pour lister le contenu d'un répertoire, AAHHH y'a pas les Alias. Tu tape nano pour modifier un fichier ou **apt/yum** pour installer un package, rien ne fonctionne t'es deg !!! Tu te dis: "Ca commance je vais galérer", **ne t'inquiete pas ca va bien se passer** on va justement s'occuper de ca mais avec Ansible tant qu'a faire, histoire de ne pas avoir a se retaper le bouleau a chaque connexion à PWD.
+Maintenant si tu est comme moi tu tape **ll** pour lister le contenu d'un répertoire, AAHHH y'a pas les Alias. Tu tape **nano** pour modifier un fichier ou **apt/yum** pour installer un package, rien ne fonctionne t'es deg !!! Tu te dis: "Ca commance je vais galérer", **ne t'inquiete pas ca va bien se passer** on va justement s'occuper de ca mais avec Ansible tant qu'a faire, histoire de ne pas avoir a se retaper le bouleau a chaque connexion à PWD.
 
 ***Bon à savoir :***
 Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra donc installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
@@ -35,4 +36,4 @@ Installation Ansible:
 Clone le dépot de la formation dans ton home directory avec la commande ci-dessous:
 >git clone https://github.com/acoilier/formation_ansible.git
 
-C'est Bon t'es prêt pour commancer les labs !!!
+C'est bon t'es prêt pour commancer les labs, let's go !!!
