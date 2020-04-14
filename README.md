@@ -1,9 +1,9 @@
 # **Formation Ansible**
 ![alt text](https://media.giphy.com/media/11e0gEWxYoSYTK/giphy.gif "Ansible ?")  
 
-Cette formation présente l'outil Ansible et aborde les compétences de base pour commancer à l'utiliser. 
+Cette formation présente l'outil Ansible et aborde les compétences de bases pour commancer à l'utiliser. 
 
-Lors de cette formation des Labs permettrons de manipuler Ansible et de manager plusieur servers, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de bases d'utilisation d'un système Linux pour suivre cette formation.
+Lors de cette formation des Labs permettrons de manipuler Ansible et de manager plusieurs serveurs, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de bases d'utilisation d'un système Linux pour suivre cette formation.
 
 ## Lien du cours:
 - [Présentation du cours]() (Pas disponible pour l'instant)
@@ -17,10 +17,10 @@ La plateforme PWD est un projet soutenu par Docker afin de faire des Labs Docker
 2. Cliquer sur **Login** puis **docker**  
 3. Si vous avez un compte Docker vous pouvez l'utiliser sinon il faudra en créer un en cliquant sur **sign up**.  
 ### Utilisation de PWD:
-Quand tu es connecté, tu as accès pour 4H au Labs avant sa destruction. Il sera possible de le relancer autant de fois que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
+Quand tu es connecté, tu as accès pour 4H au Lab avant sa destruction. Il sera possible de le relancer autant de fois que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
 
-Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité de taper tes commandes directement dans l'interface web, cependant je te conseil de te connecter dessus directement en SSH avec le l'adresse qui t'es donné dans le récap du haut de la page (pour pouvoir faire des tabulation).  
-Si t'es sur Windows t'as **putty.exe** ou le [nouveau terminal Microsoft](https://www.microsoft.com/fr-fr/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab) qui éxécute une instance [Windows Subsystem Linux](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10), pour WSL je te prévient c'est un peu long à installer (du powershell et un reboot) garde le pour plus tard si c'est pas déja opérationnel pour toi ;)
+Commance par te créer une intance en cliquant sur **ADD NEW INSTANCE**. Tu as en suite la possibilité de taper tes commandes directement dans l'interface web, cependant je te conseil de te connecter dessus directement en SSH avec le l'adresse qui t'es donnée dans le récap du haut de la page (pour pouvoir faire des tabulation).  
+Si t'es sur Windows t'as **putty.exe** ou le [nouveau terminal Microsoft](https://www.microsoft.com/fr-fr/p/windows-terminal-preview/9n0dx20hk701?activetab=pivot:overviewtab) qui éxécute une instance [Windows Subsystem Linux](https://docs.microsoft.com/fr-fr/windows/wsl/install-win10), pour WSL je te prévient c'est un peu long à installer (du powershell et un reboot) garde le pour plus tard si c'est pas déja OK pour toi ;)
 
 Bon la on est pas mal, tu as accès à ton serveur et tu peux en ajouter d'autres cliquant sur **ADD NEW INSTANCE**.  
 
