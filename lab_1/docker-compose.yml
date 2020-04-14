@@ -1,21 +1,12 @@
 version: '3'
 services:
-    lab_1:
+    rebond:
         build:
             context: .
-            dockerfile: ./server.dockerfile
-        command: tail -f /dev/null
+            dockerfile: ./Dockerfile
         networks:
             lab_net:
                 ipv4_address: 172.28.0.10
-    lab_2:
-        build:
-            context: .
-            dockerfile: ./server.dockerfile
-        command: tail -f /dev/null
-        networks:
-            lab_net:
-                ipv4_address: 172.28.0.11
 networks:
     lab_net:
         ipam:
