@@ -1,7 +1,7 @@
 # **Formation Ansible**
 ![alt text](https://media.giphy.com/media/11e0gEWxYoSYTK/giphy.gif "Ansible ?")  
 
-Cette formation présente l'outil Ansible et aborde les compétences de bases pour commancer à l'utiliser. 
+Cette formation présente l'outil Ansible et aborde les compétences de bases pour commencer à l'utiliser. 
 
 Lors de cette formation des Labs permettrons de manipuler Ansible et de manager plusieurs serveurs, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de bases d'utilisation d'un système Linux pour suivre cette formation.
 
