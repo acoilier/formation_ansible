@@ -15,7 +15,7 @@ Lors de cette formation des Labs permettrons de manipuler Ansible et de manager 
 La plateforme PWD est un projet soutenu par Docker afin de faire des Labs Docker gratuitement. Dans notre cas nous n'utiliserons pas docker mais seulement les instances de serveurs qu'il est pôssible de générer. Afin de pouvoir l'utiliser il faut tu est un compte docker, tu peux t'en créer un en suivant le modop ci-dessous:
 1. Se connecter sur le site [Play Whis Docker](https://labs.play-with-docker.com/).  
 2. Cliquer sur **Login** puis **docker**  
-3. Si vous avez un compte Docker vous pouvez l'utiliser sinon il faudra en créer un en cliquant sur **sign up**.  
+3. Si tu as un compte Docker tu peux l'utiliser sinon il faudra en créer un en cliquant sur **sign up**.  
 ### Utilisation de PWD:
 Quand tu es connecté, tu as accès pour 4H au Lab avant sa destruction. Il sera possible de le relancer autant de fois que tu le souhaites mais note bien que tu repars de zéro a chaque fois.  
 
