@@ -6,7 +6,7 @@ Cette formation présente l'outil Ansible et aborde les compétences de base pou
 Lors de cette formation des Labs permettrons de manipuler Ansible et de manager plusieur servers, nous utiliserons pour ceci la platforme [Play Whis Docker](https://labs.play-with-docker.com/) comme lab. Il est nécessaire que tu es les connaissances de bases d'utilisation d'un système Linux pour suivre cette formation.
 
 ## Lien du cours:
-- [Présentation du cours]()
+- [Présentation du cours]() (Pas disponible pour l'instant)
 - [Projet github](https://github.com/acoilier/formation_ansible)
 - [Play Whis Docker](https://labs.play-with-docker.com/)
 
