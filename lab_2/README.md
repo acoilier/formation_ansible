@@ -60,3 +60,16 @@ Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`.
 Il est important de préciser ton fichier d'inventaire avec l'option `-i`
 
 ### Déployer ton application:
+
+Le hack a été identifié, le fichier `/var/www/html/index.nginx-debian.html` a été modifié.
+Tu dispose dans le répertoire **lab_2** d'une sauvegarde de celui-ci. 
+
+Pour déployer a nouveau ton fichier tu peux utiliser le module [copy](https://docs.ansible.com/ansible/latest/modules/file_module.html).
+
+Quand c'est OK va vérifier que ton site web est bien modifié en cliquant sur le port 80 à coté de **OPEN PORT** dans PWD.
+
+## Correction:
+
+La correction se trouve dans répertoire `correction`. Tu y trouveras les éléments suivant:
+- le fichier `inventory`
+- Un script qui lance la commande Ansible
