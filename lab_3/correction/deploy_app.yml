@@ -1,0 +1,11 @@
+- hosts: web
+  tasks:
+  - name: installation Clamav
+    apt:
+      name: clamav
+      state: present
+      update_cache: yes
+  - name: déploiement de l'application
+    file:
+      src: index.nginx-debian.html
+      dest: /var/www/html/index.nginx-debian.html
