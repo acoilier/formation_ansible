@@ -1,4 +1,4 @@
-# Premier lab Ansible
+# Lab 1 - Le commencement
 ![alt text](https://media.giphy.com/media/TTJYZ8tRHPsfS/giphy.gif "Ansible ?")
 
 Pour commencer le lab tu dois avoir réaliser les prérequis expliqués sur la page principale du projet voir ici.
@@ -56,7 +56,7 @@ localhost | CHANGED => {
 
 Maintenant tu peux allez voir le contenu du fichier pour vérifier, la line doit se trouver à la fin. `cat /root/.profile`
 
-### Test de jouer un deuxième fois la même commande
+### Tester de jouer une deuxième fois la même commande:
 Maintenant rappel la commande et éxécute la à nouveau pour voir le comportement.
 
 Résultat attendu:
