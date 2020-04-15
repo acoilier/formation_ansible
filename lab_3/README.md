@@ -58,14 +58,37 @@ Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`.
 Tu devrais te retrouver avec: 
 
 ```
-
+web_1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+web_3 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+web_2 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
 ```
 ### Déployer ton application:
 
-Le hack a été identifié, le fichier `/var/www/html/index.nginx-debian.html` a été modifié.
-Tu dispose dans le répertoire **lab_2** d'une sauvegarde de celui-ci. 
+Maintenant il est temps de faire notre playbook.
+> touch deploy_app.yml
 
-Pour déployer a nouveau ton fichier tu peux utiliser le module [copy](https://docs.ansible.com/ansible/latest/modules/file_module.html).
+1. Nous souhaitons qu'il install le paquet clamav sur tous nos serveur.
+2. Nous souhaitons qu'il fasse le déploiement de notre application sur tous nos serveur.
+
+Mêmes application que le Lab2
 
 Quand c'est OK va vérifier que ton site web est bien modifié en cliquant sur le port 80 à coté de **OPEN PORT** dans PWD.  
 
