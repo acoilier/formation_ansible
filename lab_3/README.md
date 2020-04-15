@@ -1,12 +1,12 @@
-# Lab 2 - L'entrainement
-![alt text](https://media.giphy.com/media/26BRzQS5HXcEWM7du/giphy.gif "Ansible ?")
+# Lab 3 - L'industrialisation
+![alt text](https://media.giphy.com/media/l1BgDIOByniXC/giphy.gif "l'indistrialisation")
 
 Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet voir ici.
 
 C'est a dire:
 - Que tu es connecté sur un node PWD
 - Que tu as cloné le dépot de la formation
-- Que tu es dans le répertoire ./formation-ansible/lab_2/
+- Que tu es dans le répertoire ./formation-ansible/lab_3/
 
 ## Création du lab:
 Pour créer le lab tu dois faire la commande suivante:
@@ -26,39 +26,40 @@ Tu n'a qu'une seule machine dans ton lab:
 
 | **Nom** | **IP** | **User** | **Password** | **OS** |
 | --- | --- | --- | --- | --- |
-| web | 172.28.0.11 | root | ansible | Ubuntu 16.0.4 LTS | 
+| web1 | 172.28.0.12 | root | ansible | Ubuntu 16.0.4 LTS | 
+| web2 | 172.28.0.13 | root | ansible | Ubuntu 16.0.4 LTS |
+| web3 | 172.28.0.14 | root | ansible | Ubuntu 16.0.4 LTS |
 
-C'est un serveur web pour montrer au monde entier que c'est bien toi l'élu. Malheureusement tu te fais régulièrement hacker ton site web...
-
-A chaque fois tu dois te reconnecter sur ton serveur et redéployer une version propre de ton application.
+C'est toujours des serveurs web tout neuf.
 
 Tu peux consulter le site web en cliquant sur **OPEN PORT** dans PWD et mettre le port 80.
 
 ## Objectif:
 
-L'objectif est de se faire un inventaire et de se préparer une commande Ansible qui va faire cela rapidement sans avoir besoin de te connecter sur ton serveur.
+L'objectif est de se faire un inventaire et un playbook pour déployer et sécuriser notre application sur les trois serveurs.
 
 ## Action à réaliser:
-### installer sshpass:
+### installer sshpass (Si c'est pas déjà fait):
 Ansible se connecte en ssh sur les hôtes distant. Pour cela nous avons besoin sur paquet **sshpass** qui n'est pas par défaut sur notre node pwd.
 
 Installation de sshpass:
 > apk add sshpass
 
 ### Créer ton inventaire:
-Nous avons besoin de se créer un inventaire qui aura les informations de connexion à notre serveur.
+Nous avons besoin de se créer un inventaire qui aura les informations de connexion à nos serveurs.
 
 Nous créons donc un fichier qu'on va appeler inventory:
 >touch inventory
 
-Maintenant à toi de jouer, complète ton inventaire. Pour t'aider un peu sache que pour se connecter, Ansible aura besoin de trois variables pour ton host:
-- **ansible_host** : L'ip de ton serveur.
-- **ansible_ssh_user** : l'utilisateur de connexion.
-- **ansible_ssh_pass** : le password de connexion.
+Maintenant à toi de jouer, complète ton inventaire. Pour t'aider tu peux regardé ce qu'on a fait dans le lab_2.
 
-Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`.  
-Il est important de préciser ton fichier d'inventaire avec l'option `-i`et de mettre le groupe que tu souhaites tester à la fin de ta commande.
+Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`. 
 
+Tu devrais te retrouver avec: 
+
+```
+
+```
 ### Déployer ton application:
 
 Le hack a été identifié, le fichier `/var/www/html/index.nginx-debian.html` a été modifié.

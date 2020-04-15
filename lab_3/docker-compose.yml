@@ -1,0 +1,31 @@
+version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: ../sources/dockerfile/lab3_.dockerfile
+        ports:
+            - 80:80
+        networks:
+            lab_net:
+                ipv4_address: 172.28.0.12
+    web2:
+        build:
+            context: .
+            dockerfile: ../sources/dockerfile/lab3_web.dockerfile
+        networks:
+            lab_net:
+                ipv4_address: 172.28.0.13
+    web3:
+        build:
+            context: .
+            dockerfile: ../sources/dockerfile/lab3_web.dockerfile
+        networks:
+            lab_net:
+                ipv4_address: 172.28.0.14
+networks:
+    lab_net:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.28.0.0/24
