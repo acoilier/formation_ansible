@@ -1,7 +1,7 @@
 # Lab 1 - Le commencement
 ![alt text](https://media.giphy.com/media/TTJYZ8tRHPsfS/giphy.gif "Ansible ?")
 
-Pour commencer le lab tu dois avoir réaliser les prérequis expliqués sur la page principale du projet voir ici.
+Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet voir ici.
 
 C'est a dire:
 - Que tu es connecté sur un node PWD
