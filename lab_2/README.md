@@ -32,10 +32,31 @@ C'est un serveur web pour montrer au monde entier que c'est bien toi l'élu. Mal
 
 A chaque fois tu dois te reconnecter sur ton serveur et redéployer une version propre de tan application.
 
-Tu peux consulter le site web en cliquant sur le lien du port 80 dans PWD.
+Tu peux consulter le site web en cliquant sur **OPEN PORT** dans PWD et mettre le port 80.
 
 ## Objectif:
 
 L'objectif est de se faire un inventaire et de se préparer une commande Ansible qui va faire cela rapidement sans avoir besoin de te connecter sur ton serveur.
 
+## Action à réaliser:
+### insatller sshpass:
+Ansible se connecte en ssh sur les hôtes distant. Pour cela nous avons besoin sur paquet **sshpass** qui n'est pas par défaut sur notre node pwd.
 
+Installation de sshpass:
+> apk add sshpass
+
+### Créer ton inventaire:
+Nous avons besoin de se créer un inventaire qui aura les information de connexion à notre serveur.
+
+Nous créons donc un fichier qu'on va appeler inventory:
+>touch inventory
+
+Maintenant à toi de jouer, complète ton inventaire. Pour t'aider un peu sache que pour se connecter Ansible aura besoin de trois variable pour ton host:
+- **ansible_host** : L'ip de ton serveur.
+- **ansible_ssh_user** : l'utilisateur de connexion.
+- **ansible_ssh_pass** : le password de connexion.
+
+Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`.  
+Il est important de préciser ton fichier d'inventaire avec l'option `-i`
+
+### Déployer ton application:

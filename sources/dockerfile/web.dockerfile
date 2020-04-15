@@ -38,7 +38,6 @@ WORKDIR /etc/nginx
 
 EXPOSE 22
 EXPOSE 80
-EXPOSE 443
 
 ADD sources/lab2_web_start.sh /
 RUN chmod +x /lab2_web_start.sh
