@@ -3,7 +3,7 @@ services:
     web:
         build:
             context: .
-            dockerfile: ../sources/dockerfile/lab3_.dockerfile
+            dockerfile: ../sources/dockerfile/lab3_web.dockerfile
         ports:
             - 80:80
         networks:
