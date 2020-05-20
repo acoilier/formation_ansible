@@ -38,8 +38,8 @@ localhost | SUCCESS => {
 }
 ```
 
-Pas d'inquiétude pour le **[WARNING]** c'est normale on a pas d'inventaire.
-### Ajouter un Alias pour la commande `ls`:
+Pas d'inquiétude pour le **[WARNING]** c'est normal on a pas d'inventaire.
+### Ajouter un Alias `ll` pour la commande `ls -la`:
 Pour ajouter cet alias il faut modifier le fichier caché `.profile` qui se trouve dans notre home `/root`. Nous souhaitons ajouter une ligne à celui-ci, il existe déja un alias pour `vi` a l'intérieur que nous allons prendre pour exemple. 
 
 On souaite donc ajouter `alias ll='ls -la'`. Pour cela on va utiliser le module `lineinfile` et lui passer les arguments qui vont bien avec l'option `-a`
