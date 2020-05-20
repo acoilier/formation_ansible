@@ -35,7 +35,7 @@ Tu peux consulter le site web par défaut de Nginx sur **OPEN PORT** dans PWD et
 
 L'objectif est de se faire un inventaire et un playbook pour déployer et sécuriser notre application sur les trois serveurs en même temps.
 
-## Action à réaliser:
+## Actions à réaliser:
 ### installer sshpass (Si c'est pas déjà fait):
 Ansible se connecte en ssh sur les hôtes distant. Pour cela nous avons besoin sur paquet **sshpass** qui n'est pas par défaut sur notre node pwd.
 
