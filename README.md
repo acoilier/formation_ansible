@@ -29,13 +29,15 @@ Maintenant si tu est comme moi tu tape **ll** pour lister le contenu d'un réper
 >***Bon à savoir :*** Sur la platforme PWD les serveurs utilisés sont des Alpine Linux. Il faudra donc installer les pakages avec la commande apk, voir exemple ci-dessous pour l'installation d'Ansible.
 
 Installation Ansible:
-```
-$ apk add ansible
-```
+
+> apk add ansible
+
 ## Récupération du dépot sur Github:
 
 Clone le dépot de la formation dans ton home directory avec la commande ci-dessous:
-```
-$ git clone https://github.com/acoilier/formation_ansible.git
-```
+
+> git clone https://github.com/acoilier/formation_ansible.git
+
 C'est bon t'es prêt pour commancer les labs, let's go !!!
+
+[Go to LAB 1](https://github.com/acoilier/formation_ansible/tree/master/lab_1)
