@@ -55,6 +55,8 @@ Maintenant il faut compléter ton inventaire. Ansible aura besoin de trois varia
 - **ansible_ssh_pass** : le password de connexion.
 
 Voici une facon de faire ton inventaire, on donne un nom à notre serveur ***web_1*** et sur la même ligne on passe les variables qui lui sont propre.
+
+> nano inventory
 ```
 web_1 ansible_host=172.28.0.11 ansible_ssh_user=root ansible_ssh_pass=ansible
 ```
