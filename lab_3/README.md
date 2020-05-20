@@ -1,14 +1,13 @@
 # Lab 3 - L'industrialisation
 ![alt text](https://media.giphy.com/media/l1BgDIOByniXC/giphy.gif "l'indistrialisation")
 
-Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet voir ici.
+Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet. Il faut également supprimer le lab précedent et s'assurer qu'il n'y a plus de containers de up.
+pour cela depuis le répertoire lab_2 fais un `docker-compose down`.
 
-C'est a dire:
-- Que tu es connecté sur un node PWD
-- Que tu as cloné le dépot de la formation
-- Que tu es dans le répertoire ./formation-ansible/lab_3/
+Maintenant place toi dans le répertoire ***./formation-ansible/lab_3/***.
 
 ## Création du lab:
+
 Pour créer le lab tu dois faire la commande suivante:
 >docker-compose up -d
 ### Commandes utiles:
@@ -18,11 +17,9 @@ Supprimer le lab (tu perds tout !!!):
 Lister les conteneurs qui sont up:
 >docker ps
 
-Tu peux donc supprimer et recréer le lab a ta guise...
-
 ## Contexte:
 
-Tu n'a qu'une seule machine dans ton lab:  
+Tu as trois serveurs dans ton lab:
 
 | **Nom** | **IP** | **User** | **Password** | **OS** |
 | --- | --- | --- | --- | --- |
@@ -30,13 +27,13 @@ Tu n'a qu'une seule machine dans ton lab:
 | web2 | 172.28.0.13 | root | ansible | Ubuntu 16.0.4 LTS |
 | web3 | 172.28.0.14 | root | ansible | Ubuntu 16.0.4 LTS |
 
-C'est toujours des serveurs web tout neuf.
+C'est des machines fraichement installées avec un service web Nginx.
 
-Tu peux consulter le site web en cliquant sur **OPEN PORT** dans PWD et mettre le port 80.
+Tu peux consulter le site web par défaut de Nginx sur **OPEN PORT** dans PWD et mettre le port 80.
 
 ## Objectif:
 
-L'objectif est de se faire un inventaire et un playbook pour déployer et sécuriser notre application sur les trois serveurs.
+L'objectif est de se faire un inventaire et un playbook pour déployer et sécuriser notre application sur les trois serveurs en même temps.
 
 ## Action à réaliser:
 ### installer sshpass (Si c'est pas déjà fait):
@@ -51,9 +48,21 @@ Nous avons besoin de se créer un inventaire qui aura les informations de connex
 Nous créons donc un fichier qu'on va appeler inventory:
 >touch inventory
 
-Maintenant à toi de jouer, complète ton inventaire. Pour t'aider tu peux regardé ce qu'on a fait dans le lab_2.
+Contenu du l'inventaire:
+
+```
+[web]
+web_1 ansible_host=172.28.0.12
+web_2 ansible_host=172.28.0.13
+web_3 ansible_host=172.28.0.14
+
+[web:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=ansible
+```
 
 Quand c'est OK pour toi tu peux tester la connexion avec le module `ping`. 
+> ansible -m ping -i inventory web
 
 Tu devrais te retrouver avec: 
 
@@ -88,9 +97,26 @@ Maintenant il est temps de faire notre playbook.
 1. Nous souhaitons qu'il install le paquet clamav sur tous nos serveur.
 2. Nous souhaitons qu'il fasse le déploiement de notre application sur tous nos serveur.
 
-Mêmes application que le Lab2
+contenu du playbook:
 
-Quand c'est OK va vérifier que ton site web est bien modifié en cliquant sur le port 80 à coté de **OPEN PORT** dans PWD.  
+```
+- hosts: web
+  tasks:
+  - name: installation Clamav
+    apt:
+      name: clamav
+      state: present
+      update_cache: yes
+  - name: déploiement de l'application
+    copy:
+      src: index.nginx-debian.html
+      dest: /var/www/html/index.nginx-debian.html
+```
+
+Exécution do playbook:
+> ansible-playbook -i inventory deploy_app.yml
+
+Quand c'est OK,va vérifier que ton site web est bien modifié en cliquant sur le port 80 à coté de **OPEN PORT** dans PWD.  
 
 Note: Le cache fait que c'est pas immédiat à tous les coups.
 
@@ -98,4 +124,4 @@ Note: Le cache fait que c'est pas immédiat à tous les coups.
 
 La correction se trouve dans répertoire `correction`. Tu y trouveras les éléments suivant:
 - le fichier `inventory`
-- Un script qui lance la commande Ansible
+- le playbook `deploy_app.yml`
