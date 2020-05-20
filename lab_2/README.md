@@ -74,7 +74,7 @@ Tu dispose dans le répertoire **/root/formation-ansible/lab_2** d'une sauvegard
 Pour déployer a nouveau ton fichier tu peux utiliser le module [copy](https://docs.ansible.com/ansible/latest/modules/file_module.html).
 
 Voici la commande permettant d'utiliser le module copy et déployer notre fichier:
-> ansible -m template -i inventory -a "src=index.nginx-debian.html dest=/var/www/html/index.nginx-debian.html" web_1
+> ansible -m copy -i inventory -a "src=index.nginx-debian.html dest=/var/www/html/index.nginx-debian.html" web_1
 
 Quand c'est OK va vérifier que ton site web est bien modifié en cliquant sur le port 80 à coté de **OPEN PORT** dans PWD.  
 Note: Le cache sur PWD fait que c'est pas immédiat à tous les coups.
