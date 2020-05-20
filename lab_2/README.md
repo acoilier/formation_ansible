@@ -22,7 +22,7 @@ Tu peux donc supprimer et recréer le lab...
 
 ## Contexte:
 
-Tu n'a qu'une seule machine dans ton lab:  
+Tu n'as qu'une seule machine dans ton lab:  
 
 | **Nom** | **IP** | **User** | **Password** | **OS** |
 | --- | --- | --- | --- | --- |
@@ -30,15 +30,13 @@ Tu n'a qu'une seule machine dans ton lab:
 
 C'est un serveur web pour montrer au monde entier que c'est bien toi l'élu. Malheureusement tu te fais régulièrement hacker ton site web...
 
-A chaque fois tu dois te reconnecter sur ton serveur et redéployer ton site web.
-
 Tu peux consulter le site web en cliquant sur **OPEN PORT** dans PWD et mettre le port 80.
 
 ## Objectif:
 
-L'objectif est de se faire un inventaire et de se préparer une commande Ansible qui va faire cela rapidement sans avoir besoin de te connecter sur ton serveur et d'upload les fichiers de ton site.
+L'objectif est de se faire un inventaire et de se préparer une commande Ansible pour redéployer ton site web. Cela sans avoir besoin de te connecter sur ton serveur web.
 
-## Action à réaliser:
+## Actions à réaliser:
 ### installer sshpass:
 Ansible se connecte en ssh sur les hôtes distant. Pour cela nous avons besoin sur paquet **sshpass** qui n'est pas par défaut sur notre node pwd.
 
