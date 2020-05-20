@@ -91,7 +91,7 @@ web_2 | SUCCESS => {
 ```
 ### Déployer ton application:
 
-Maintenant il est temps de faire notre playbook.
+Maintenant il est temps de faire ton playbook.
 > touch deploy_app.yml
 
 1. Nous souhaitons qu'il install le paquet clamav sur tous nos serveur.
@@ -122,6 +122,6 @@ Note: Le cache fait que c'est pas immédiat à tous les coups.
 
 ## Correction:
 
-La correction se trouve dans répertoire `correction`. Tu y trouveras les éléments suivant:
+La correction se trouve dans répertoire `lab_3/correction/`. Tu y trouveras les éléments suivant:
 - le fichier `inventory`
 - le playbook `deploy_app.yml`
