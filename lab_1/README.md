@@ -77,3 +77,5 @@ On peut donc maintenant recharger le profile en faisant `su -` et en testant not
 ### Installer nano via Ansible
 Maintenant trouves comment installer `nano` en local via ansible. 
 Pour t'aider tu peux faire ce que tu vas faire très souvent avec Ansible, taper dans Google: `ansible [CE_QUE_JE_VEUX_FAIRE]`. Ton bonheur est certainement dans le 5 premiers résultats, si c'est pas le cas c'est que tu ne fais pas la bonne recherche.
+
+[Go to LAB 2](https://github.com/acoilier/formation_ansible/tree/master/lab_2)
