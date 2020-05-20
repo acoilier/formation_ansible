@@ -1,8 +1,8 @@
 # Lab 3 - L'industrialisation
 ![alt text](https://media.giphy.com/media/l1BgDIOByniXC/giphy.gif "l'indistrialisation")
 
-Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet. Il faut également supprimer le lab précedent et s'assurer qu'il n'y a plus de containers de up.
-pour cela depuis le répertoire lab_2 fais un `docker-compose down`.
+Pour commencer le lab tu dois avoir réalisé les prérequis expliqués sur la page principale du projet. Il faut également supprimer le lab précedent et s'assurer qu'il n'y a plus de containers de up.  
+Pour cela depuis le répertoire lab_2 fais un `docker-compose down`.
 
 Maintenant place toi dans le répertoire ***./formation-ansible/lab_3/***.
 
