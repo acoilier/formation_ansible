@@ -46,7 +46,7 @@ Installation de sshpass:
 Nous avons besoin de se créer un inventaire qui aura les informations de connexion à nos serveurs.
 
 Nous créons donc un fichier qu'on va appeler inventory:
->touch inventory
+>nano inventory
 
 Contenu du l'inventaire:
 
